@@ -8,7 +8,7 @@
 <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>Kişi 1</title>
+    <title>Kişi 11</title>
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 </head>
@@ -22,36 +22,145 @@
         table,
         th,
         td {
-            border: 3px solid rgb(82, 1, 1);    
+            border: 3px solid rgb(82, 1, 1);
             padding-top: 2%;
         }
-    </style>
 
-    <table style="text-align: center;">
+        td {
+            font-size: larger;
+        }
+
+        button {
+            position: relative;
+            border: none;
+            background: transparent;
+            padding: 0;
+            cursor: pointer;
+            outline-offset: 4px;
+            transition: filter 250ms;
+            user-select: none;
+            touch-action: manipulation;
+        }
+
+        .shadow {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            border-radius: 12px;
+            background: hsl(0deg 0% 0% / 0.25);
+            will-change: transform;
+            transform: translateY(2px);
+            transition: transform 600ms cubic-bezier(.3, .7, .4, 1);
+        }
+
+        .edge {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            border-radius: 12px;
+            background: linear-gradient(to left,
+                    hsl(340deg 100% 16%) 0%,
+                    hsl(340deg 100% 32%) 8%,
+                    hsl(340deg 100% 32%) 92%,
+                    hsl(340deg 100% 16%) 100%);
+        }
+
+        .front {
+            display: block;
+            position: relative;
+            padding: 12px 27px;
+            border-radius: 12px;
+            font-size: 1.1rem;
+            color: white;
+            background: hsl(345deg 100% 47%);
+            will-change: transform;
+            transform: translateY(-4px);
+            transition: transform 600ms cubic-bezier(.3, .7, .4, 1);
+        }
+
+        button:hover {
+            filter: brightness(110%);
+        }
+
+        button:hover .front {
+            transform: translateY(-6px);
+            transition: transform 250ms cubic-bezier(.3, .7, .4, 1.5);
+        }
+
+        button:active .front {
+            transform: translateY(-2px);
+            transition: transform 34ms;
+        }
+
+        button:hover .shadow {
+            transform: translateY(4px);
+            transition: transform 250ms cubic-bezier(.3, .7, .4, 1.5);
+        }
+
+        button:active .shadow {
+            transform: translateY(1px);
+            transition: transform 34ms;
+        }
+
+        button:focus:not(:focus-visible) {
+            outline: none;
+        }
+    </style>
+    <a href="index.html"> <button>
+      <span class="shadow"></span>
+      <span class="edge"></span>
+       <span class="front text"> Ana Sayfa
+        </span>
+      </button></a>
+      <a href="howto.html"> <button id="howto">
+        <span class="shadow"></span>
+        <span class="edge"></span>
+         <span class="front text"> Nasıl Randevu alınır?
+          </span>
+        </button></a>
+    <table style="width:100%">
         <tr>
             <th>İsim</th>
-            <th>Soyisim</th>
-            <th>Cinsiyet</th>
-            <th>Doğum Tarihi</th>
-            <th>Uyruk</th>
-            <th>Pasaport Numarası</th>
-            <th>Pasaport Son Kullanma Tarihi</th>
-            <th>İletişim numarası</th>
-            <th>Mail adresi</th>
+            <td>AYDIN</td>
         </tr>
         <tr>
-            <td>AYDIN</td>
+            <th>Soyisim</th>
             <td>TANRIVERDI</td>
+        </tr>
+        <tr>
+            <th>Cinsiyet</th>
             <td>Male</td>
+        </tr>
+        <tr>
+            <th>Doğum Tarihi</th>
             <td>13/12/1972</td>
+        </tr>
+        <tr>
+            <th>Uyruk</th>
             <td>TURKEY</td>
+        </tr>
+        <tr>
+            <th>Pasaport Num.</th>
             <td>U25490242</td>
+        </tr>
+        <tr>
+            <th>Pasaport Son Kullanma Tarihi</th>
             <td>02/12/2031</td>
+        </tr>
+        <tr>
+            <th>İletişim</th>
             <td>532 1568844</td>
+        </tr>
+        <tr>
+            <th>E-posta</th>
             <td>EMREC611@GMAIL.COM</td>
         </tr>
     </table>
-    <a href="index.html">Ana Sayfa</a>
+
 
 
 
