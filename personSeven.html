@@ -8,7 +8,7 @@
 <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>Kişi 1</title>
+    <title>Kişi 7</title>
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 </head>
@@ -40,18 +40,189 @@
             <th>Mail adresi</th>
         </tr>
         <tr>
-            <td>EDA</td>
-            <td>GUME</td>
-            <td>Female</td>
-            <td>16/04/1999</td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
             <td>TURKEY</td>
-            <td>U20387205</td>
-            <td>16/04/2024</td>
+            <td></td>
+            <td></td>
             <td>532 1568844</td>
             <td>EMREC611@GMAIL.COM</td>
         </tr>
     </table>
     <a href="index.html">Ana Sayfa</a>
+
+
+
+</body>
+
+</html>
+
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]>      <html class="no-js"> <!--<![endif]-->
+
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Kişi 10</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+
+<body>
+    <style>
+        body {
+            background-color: antiquewhite;
+        }
+
+        table,
+        th,
+        td {
+            border: 3px solid rgb(82, 1, 1);
+            padding-top: 2%;
+        }
+
+        td {
+            font-size: larger;
+        }
+
+        button {
+            position: relative;
+            border: none;
+            background: transparent;
+            padding: 0;
+            cursor: pointer;
+            outline-offset: 4px;
+            transition: filter 250ms;
+            user-select: none;
+            touch-action: manipulation;
+        }
+
+        .shadow {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            border-radius: 12px;
+            background: hsl(0deg 0% 0% / 0.25);
+            will-change: transform;
+            transform: translateY(2px);
+            transition: transform 600ms cubic-bezier(.3, .7, .4, 1);
+        }
+
+        .edge {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            border-radius: 12px;
+            background: linear-gradient(to left,
+                    hsl(340deg 100% 16%) 0%,
+                    hsl(340deg 100% 32%) 8%,
+                    hsl(340deg 100% 32%) 92%,
+                    hsl(340deg 100% 16%) 100%);
+        }
+
+        .front {
+            display: block;
+            position: relative;
+            padding: 12px 27px;
+            border-radius: 12px;
+            font-size: 1.1rem;
+            color: white;
+            background: hsl(345deg 100% 47%);
+            will-change: transform;
+            transform: translateY(-4px);
+            transition: transform 600ms cubic-bezier(.3, .7, .4, 1);
+        }
+
+        button:hover {
+            filter: brightness(110%);
+        }
+
+        button:hover .front {
+            transform: translateY(-6px);
+            transition: transform 250ms cubic-bezier(.3, .7, .4, 1.5);
+        }
+
+        button:active .front {
+            transform: translateY(-2px);
+            transition: transform 34ms;
+        }
+
+        button:hover .shadow {
+            transform: translateY(4px);
+            transition: transform 250ms cubic-bezier(.3, .7, .4, 1.5);
+        }
+
+        button:active .shadow {
+            transform: translateY(1px);
+            transition: transform 34ms;
+        }
+
+        button:focus:not(:focus-visible) {
+            outline: none;
+        }
+    </style>
+    <a href="index.html"> <button>
+      <span class="shadow"></span>
+      <span class="edge"></span>
+       <span class="front text"> Ana Sayfa
+        </span>
+      </button></a>
+      <a href="howto.html"> <button id="howto">
+        <span class="shadow"></span>
+        <span class="edge"></span>
+         <span class="front text"> Nasıl Randevu alınır?
+          </span>
+        </button></a>
+    <table style="width:100%">
+        <tr>
+            <th>İsim</th>
+            <td>EDA</td>
+        </tr>
+        <tr>
+            <th>Soyisim</th>
+            <td>GUME</td>
+        </tr>
+        <tr>
+            <th>Cinsiyet</th>
+            <td>Female</td>
+        </tr>
+        <tr>
+            <th>Doğum Tarihi</th>
+            <td>16/04/1999</td>
+        </tr>
+        <tr>
+            <th>Uyruk</th>
+            <td>TURKEY</td>
+        </tr>
+        <tr>
+            <th>Pasaport Numarası</th>
+            <td>U20387205</td>
+        </tr>
+        <tr>
+            <th>Pasaport Son Kullanma Tarihi</th>
+            <td>16/04/2024</td>
+        </tr>
+        <tr>
+            <th>İletişim</th>
+            <td>532 1568844</td>
+        </tr>
+        <tr>
+            <th>E-posta</th>
+            <td>EMREC611@GMAIL.COM</td>
+        </tr>
+    </table>
+
 
 
 
